@@ -4,7 +4,7 @@
 - fail: msg="testcase_name is not defined"
   when: testcase_name is not defined
 
-- fail: msg=" {{topologies}} is not supported topology "
+- fail: msg=" {{topologies}} is not supported topology"
   when: testbed_type not in testcases[testcase_name]['topologies']
 
 - name: Gather minigraph facts about the device
